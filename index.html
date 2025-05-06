@@ -1,0 +1,271 @@
+<html>
+<head>
+	<title>KKatoo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet"  href="style.css">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $Idle: 0,
+              $AutoPlaySteps: 4,
+              $SlideDuration: 1600,
+              $SlideEasing: $Jease$.$Linear,
+              $PauseOnHover: 4,
+              $SlideWidth: 140,
+              $Cols: 7
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1200);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+          
+        });
+    </script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+    $(function(){
+       
+        $(document).on("scroll", function(){
+            var desplazamientoActual = $(document).scrollTop();
+            var controlArriba = $("#irarriba");
+            console.log("Estoy en " , desplazamientoActual); 
+            if(desplazamientoActual > 333 ){
+            document.getElementById("fotocambia").src="imagenes/logo_kkatoo_header.png";
+            }
+           if(desplazamientoActual < 332 ){
+            document.getElementById("fotocambia").src="imagenes/logo.png";
+            }
+            
+        });
+    });
+    </script>
+</head>
+<body>
+<main>
+<header>
+ <nav>
+<figure><img id="fotocambia" src="imagenes/logo.png"></figure>
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#">Precios</a></li>
+<li><a href="#">Soporte</a></li>
+<li><a href="#">Ingresar</a></li>	
+</ul>
+<input type="submit" value="Registrate">
+</nav>
+</header>
+<section id="imagen_fondo">
+ <h1 align="center" id="titu">¡Descubre como funciona!</h1>
+ <h1 align="center" id="titu">Te sorprenderas</h1>
+   <div align="center">
+   <ul>
+       <li id="funci"><img src="imagenes/telefono.png"></li>
+       <li id="funci"><p id="parra">Envia llamadas y SMS a miles de personas en cualquier lugar del mundio en poco tiempo y a bajo costo </p> <input type="submit" id="prueba" value="Prueba gratis"></li> 
+   </ul>
+	
+   </div>
+</section>
+<section>
+ <h1 id="color_gris">¿Como funciona?</h1>
+  <article>
+   <ul id="como">
+    <li id="funciona"><img src="imagenes/contactos.png"><span id="textofunciona">Agrega contactos</span><p id="parrafo">lorem ipsum dolor sit amet,consectetuar adipiscing eleit aenean commodo ligukla eget dolor.</p></li>
+    <li id="funciona"><img src="imagenes/crear_mensaje.png"><span id="textofunciona">Agrega contactos</span><p id="parrafo">lorem ipsum dolor sit amet,consectetuar adipiscing eleit aenean commodo ligukla eget dolor.</p></li>
+    <li id="funciona"><img src="imagenes/envia_analiza.png"><span id="textofunciona">Agrega contactos</span><p id="parrafo">lorem ipsum dolor sit amet,consectetuar adipiscing eleit aenean commodo ligukla eget dolor.</p></li>
+   </ul>
+  </article>
+</section>
+<section id="callaction">
+	<h1 id="color">KKATOO LLAMA POR TI </h1>
+		<input type="submit" id="prueba" value="Prueba gratis">
+</section>
+<section id="personas" align="center">
+			<h1 id="titu" >¿Por que elegir Kkatoo?</h1>
+            <div align="center">
+              <p id="parra">Es una solucionn empresarial para el envio de mensajes de texto Es una solucion empresarial para el envio de mensajes de texto Es una solucion empresarial para el envio de mensajes de texto.</p></div>
+			<input type="submit" id="prueba" value="Prueba gratis">	
+</section>
+<section style="padding-bottom: 60px;">
+ <div align="center">
+	<h1 id="color_gris_slider">Confían en nosotros</h1>
+    <p  id="parrafo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+     commodo ligula eget dolor.</p>
+  </div>
+	  <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
+
+        <div style="display: none;">
+                <img data-u="image" src="img/amazon.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/android.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/bitly.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/blogger.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/dnn.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/drupal.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/ebay.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/facebook.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/google.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/ibm.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/ios.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/joomla.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/linkedin.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/mac.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/magento.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/pinterest.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/samsung.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/twitter.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/windows.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/wordpress.jpg" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/youtube.jpg" />
+            </div>
+             <div style="display: none;">
+                <img data-u="image" src="img/Captura4.png" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/Captura5.png" />
+            </div>
+            <div style="display: none;">
+                <img data-u="image" src="img/Captura6.png" />
+            </div>
+            <a data-u="add" href="http://www.jssor.com" style="display:none"></a>
+        
+        </div>
+ </div>
+</section>
+<section style="background-color: #fff;">
+	<article>
+	<ul id="hom">
+		<li id="vi"><img src="imagenes/hombre.png">
+		<li id="vi">
+         <div><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor.</p><br/>
+                  <br/>
+         <p>Aenean massa. Cum sociis natoque penatibus et magnis
+           dis parturient montes, nascetur ridiculus mus.</p></div>
+           </li>
+		</li>
+	</ul>
+	
+	</article>
+</section>
+<section>
+	<article>
+	    <div align="center" style="padding-bottom: 60px;">
+	    <form>
+		<h1 id="color_gris_slider">Listo para comenzar</h1>
+		<input type="text" name="author" class="author"/>
+        <div align="center">
+		<input type="submit" id="boton" value="Inicia ahora"/>
+        </div>
+		</form>
+		</div>
+	</article>
+</section>
+<footer>
+ <article  style="background-color: #fff;">
+ <ul id="foot_ul">
+ <li id="foot_fun"><span id="textofunci">Compañía</span>
+ <ul id="vine">
+ <li><a>Empresa y marca </a></li>
+ <li><a>Prensa y medios</a></li>
+ <li><a>Privacidad</a></li>
+ <li><a>Condiciones de Servicio</a></li>
+  </ul>
+   </li>
+   <li id="foot_fun"><span id="textofunci">Recursos</span>
+    <ul id="vine">
+     <li><a>Manual de API</a></li>
+     <li><a>Guías de uso</a></li>
+     <li><a>Preguntas frecuentes</a></li>
+     <li><a>Códigos de área</a></li>
+    </ul>
+   </li>
+  <li id="foot_fun"><span id="textofunci">Soporte</span>
+   <ul id="vine" >
+    <li><a>Reporta un caso</a></li> 
+    <li><a >Asistencia por skype</a></li>
+    <li><a>Conexión remota</a></li>
+    <li><a>Contáctanos</a></li>
+   </ul>
+  </li>
+</ul>
+ <section id="contac">
+   <ul id="vine2">
+   <li id="vin">
+   <a href=""><img src="imagenes/icon6.png"></a>
+   <a href=""><img src="imagenes/icon7.png"></a>
+   <a href=""><img src="imagenes/icon8.png"></a>
+   <p id="parrofo-footer">Copyright 2015 Fonomarketing S.A.S. Todos los derechos reservados</p>
+    </li>
+   <li id="vin3">
+Teléfono: +57 (1) 703 39 05
+<span>Bogotá, Colombia</span>
+    </li>
+    </ul>
+  </section>
+ </article>
+</footer>
+</main>
+</body>
+</html>

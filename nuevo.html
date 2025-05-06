@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Uso de Javascript</title>
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+    $(function(){
+       
+        $(document).on("scroll", function(){
+            var desplazamientoActual = $(document).scrollTop();
+            var controlArriba = $("#irarriba");
+            console.log("Estoy en " , desplazamientoActual); 
+            if(desplazamientoActual > 100 ){
+            document.getElementById("fotocambia").src="imagenes/Captura4.png";
+            }
+           if(desplazamientoActual <100 ){
+            document.getElementById("fotocambia").src="imagenes/Captura4.png";
+            }
+            
+        });
+    });
+    </script>
+</head>
+<body>
+<h1> Cambio de imágenes a intervalos de 3 segundos</h1>
+<img id="fotocambia" src="imagenes/fondo_personas.png">
+ </body>
+</html>
