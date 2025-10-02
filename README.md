@@ -20,8 +20,7 @@ Jssor Slider: Carrusel avanzado de logos de marcas
 Diseño Responsive: Adaptable a diferentes dispositivos
 
 📁 Estructura del Proyecto
-<img width="454" height="579" alt="image" src="https://github.com/user-attachments/assets/ba0dca14-b143-4815-9ce2-53af56ad3da1" />/
-
+<img width="454" height="579" alt="image" src="https://github.com/user-attachments/assets/ba0dca14-b143-4815-9ce2-53af56ad3da1" /><br/>
 
 
 🎨 Características de Diseño
