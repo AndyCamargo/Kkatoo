@@ -20,7 +20,40 @@ Jssor Slider: Carrusel avanzado de logos de marcas
 Diseño Responsive: Adaptable a diferentes dispositivos
 
 📁 Estructura del Proyecto
-<img width="454" height="579" alt="image" src="https://github.com/user-attachments/assets/ba0dca14-b143-4815-9ce2-53af56ad3da1" /><br/>
+```
+kkatoo/
+│
+├── index.html              # Página principal
+├── nuevo.html              # Página de pruebas
+├── style.css               # Estilos principales
+│
+├── js/
+│   ├── jquery-1.11.3.min.js
+│   ├── jssor.slider.mini.js
+│   └── npm.js
+│
+├── imagenes/
+│   ├── logo.png
+│   ├── logo_kkatoo_header.png
+│   ├── telefono.png
+│   ├── contactos.png
+│   ├── crear_mensaje.png
+│   ├── envia_analiza.png
+│   ├── fondo_personas.png
+│   ├── textura.png
+│   └── iconos (icon5.png, icon6.png, icon7.png, icon8.png)
+│
+├── img/                    # Logos de marcas para slider
+│   ├── amazon.jpg
+│   ├── google.jpg
+│   ├── facebook.jpg
+│   └── [otros logos]
+│
+└── fonts/
+    ├── Ubuntu-R.ttf
+    └── Ubuntu-L.ttf
+
+```
 
 
 🎨 Características de Diseño
